@@ -28,7 +28,6 @@ describe("index.js", () => {
     
     it("triggers an alert if the right code is entered", () => {
       
-      // for (let j = 0; j < codes.length - 1; j++) {
       for (let i = 0, l = codes.length; i < l; i++) {
         triggerKeyDown(codes[i]);
       }
