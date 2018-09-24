@@ -19,13 +19,14 @@ function init() {
    if (event.key==codes[count]){
     count++
     console.log(`${count} / ${codes.length}`)
-  } else {
-    count = 0
-  }
-  if (count === codes.length){
+   if (count === codes.length){
     alert('you done did it!!!')
     count = 0
   }
+  } else {
+    count = 0
+  }
+
   })
 }
 
