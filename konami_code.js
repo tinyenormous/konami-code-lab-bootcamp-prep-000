@@ -12,5 +12,9 @@ const codes = [
 ];
 
 function init() {
-  // your code here
+  const main = document.getElementById('body')
+ 
+main.addEventListener('click', function(event) {
+  alert('I was clicked!')
+})
 }
