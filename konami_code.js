@@ -29,7 +29,7 @@ function init() {
          window.alert("YOU DID IT!")
          count = 0
     }
-  }, false)
+  })
 }
 
 init()
