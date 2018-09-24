@@ -20,7 +20,7 @@ function init() {
      count++
      console.log(`${count} / ${codes.length}`)
      if (count === codes.length){
-       window.alert("you done did it!!!")
+       window.alert("YOU DID IT!")
        count = 0
      }
   } else {
