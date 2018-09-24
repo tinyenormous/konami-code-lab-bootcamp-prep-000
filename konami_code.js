@@ -24,7 +24,7 @@ function init() {
       count = 0
     }
     if (count === codes.length){
-      window.alert("YOU DID IT!")
+      alert("YOU DID IT!")
       count = 0
     }
   })
