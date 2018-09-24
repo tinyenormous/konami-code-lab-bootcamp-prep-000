@@ -11,9 +11,10 @@ const codes = [
   "a"
 ];
 
+let count=0
+
 function init() {
   const main = document.querySelector('html')
-  let count=0
   main.addEventListener('keydown', function(event) {
      // console.log(event.key)
      if (event.key==codes[count]){
@@ -28,5 +29,3 @@ function init() {
     }
   })
 }
-
-init()
