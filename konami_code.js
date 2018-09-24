@@ -13,9 +13,10 @@ const codes = [
 
 function init() {
   const main = document.querySelector('body')
- let count=0
-main.addEventListener('click', function(event) {
-  if (event.which==codes[count]){
+  let count=0
+  main.addEventListener('keydown', function(event) {
+   console.log(event.key)
+   if (event.key==codes[count]){
     count++
   } else {
     count =0
@@ -23,6 +24,7 @@ main.addEventListener('click', function(event) {
   if (count === codes.length){
     alert('you done did it!!!')
   }
-  // alert('I was clicked!')
-})
+  })
 }
+
+init()
