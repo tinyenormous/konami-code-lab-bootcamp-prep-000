@@ -20,12 +20,13 @@ function init() {
      if (event.key===codes[count]){
        count++;
        // console.log(`${count} / ${codes.length}`)
-       if (count === codes.length){
-         window.alert("YOU DID IT!")
-         count = 0
-       }
+
     } else {
       count = 0
+    }
+    if (count === codes.length){
+         window.alert("YOU DID IT!")
+         count = 0
     }
   }, false)
 }
