@@ -15,10 +15,10 @@ let count=0
 
 function init() {
   const main = document.querySelector('html')
-  document.addEventListener('keydown', function(event) {
+  main.addEventListener('keydown', function(event) {
      // console.log(event.key)
      if (event.key==codes[count]){
-       count++
+       count++;
        // console.log(`${count} / ${codes.length}`)
        if (count === codes.length){
          window.alert("YOU DID IT!")
@@ -27,5 +27,7 @@ function init() {
     } else {
       count = 0
     }
-  })
+  }, false)
 }
+
+init()
