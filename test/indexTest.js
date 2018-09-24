@@ -28,8 +28,9 @@ describe("index.js", () => {
     
     it("triggers an alert if the right code is entered", () => {
       
-      for (let i = 0, l = codes.length; i < l; i++) {
-        triggerKeyDown(codes[i]);
+      for (let j = 0; j < codes.length; j++) {
+              // for (let i = 0, i = codes.length; i < l; i++) {
+        triggerKeyDown(codes[j]);
       }
       expect(spy.called).to.equal(true)
       expect(spy.callCount).to.equal(1)
