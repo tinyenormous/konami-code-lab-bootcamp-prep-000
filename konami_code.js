@@ -15,7 +15,7 @@ let count=0
 
 function init() {
   const main = document.querySelector('html')
-  main.addEventListener('keydown', function(event) {
+  document.addEventListener('keydown', function(event) {
      // console.log(event.key)
      if (event.key==codes[count]){
        count++
