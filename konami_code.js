@@ -11,9 +11,10 @@ const codes = [
   "a"
 ];
 
-let count=0
+
 
 function init() {
+  let count=0
   const main = document.querySelector('body')
   main.addEventListener('keydown', function(event) {
      // console.log(event.key)
