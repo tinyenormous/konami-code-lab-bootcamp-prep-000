@@ -20,8 +20,6 @@ function init() {
      // console.log(event.key)
      if (event.key===codes[count]){
        count++;
-       // console.log(`${count} / ${codes.length}`)
-
     } else {
       count = 0
     }
