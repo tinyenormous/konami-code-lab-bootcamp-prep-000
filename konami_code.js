@@ -17,7 +17,7 @@ function init() {
   const main = document.querySelector('body')
   main.addEventListener('keydown', function(event) {
      // console.log(event.key)
-     if (event.key==codes[count]){
+     if (event.key===codes[count]){
        count++;
        // console.log(`${count} / ${codes.length}`)
        if (count === codes.length){
