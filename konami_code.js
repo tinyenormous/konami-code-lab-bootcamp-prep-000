@@ -12,7 +12,7 @@ const codes = [
 ];
 
 function init() {
-  const main = document.getElementById('body')
+  const main = document.querySelector('body')
  
 main.addEventListener('click', function(event) {
   alert('I was clicked!')
