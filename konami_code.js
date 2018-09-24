@@ -19,10 +19,11 @@ function init() {
    if (event.key==codes[count]){
     count++
   } else {
-    count =0
+    count = 0
   }
   if (count === codes.length){
     alert('you done did it!!!')
+    count = 0
   }
   })
 }
