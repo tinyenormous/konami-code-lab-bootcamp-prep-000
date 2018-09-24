@@ -11,22 +11,20 @@ const codes = [
   "a"
 ];
 
-function init() {
-  const main = document.querySelector('html')
-  let count=0
-  main.addEventListener('keydown', function(event) {
-  // console.log(event.key)
-   if (event.key==codes[count]){
-     count++
-    // console.log(`${count} / ${codes.length}`)
-     if (count === codes.length){
-       window.alert("YOU DID IT!")
-       count = 0
-     }
-  } else {
-    count = 0
-  }
-  })
+const code = [38, 38, 40, 40, 37, 39, 37, 39, 66, 65]
+ function init() {
+  // your code here
+  var index = 0;
+  document.addEventListener('keydown', function (e) {
+    const key = parseInt(e.detail || e.which);
+     if (key === code[index]) {
+      index++;
+       if (index === code.length - 1) {
+        window.alert("YOU DID IT!");
+        index = 0;
+      }
+    } else {
+      index = 0;
+    }
+  }, false);
 }
-
-init()
